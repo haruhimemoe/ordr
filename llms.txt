@@ -1,0 +1,10 @@
+# @haruhimemoe/ordr
+
+> A TypeScript client for o!rdr (ordr.issou.best), the online osu! replay renderer, published on npm as @haruhimemoe/ordr. `createOrdrClient({ apiKey })` returns `createRender` (from .osr bytes or a replay URL, with skin, resolution, visibility, discordUserId and every danser setting; resolves to `{ renderId }`), `waitForRender(renderId)` (polls GET /ordr/renders; resolves to `{ renderId, videoUrl, render }`), `getRender`, `listRenders`, `downloadLink`, `listSkins`, `getCustomSkin` and `getBotPreset`. `renderMatchMap(client, { replays, render })` renders every player's replay of one match map, one video each. Failures are `OrdrError` (`network`, `timeout`, `bad_response`, `http_error`, `rejected`, `render_failed`, `render_removed`) with o!rdr's numeric `ordrCode`; `ORDR_ERROR_CODES` maps codes 1 to 54. No socket.io. zod ^4.0.16 is a peer dependency. Server-side, Node 22.12+. MIT licensed.
+
+## Docs
+
+- [Usage](https://github.com/haruhimemoe/ordr#usage): a render with progress, dev-mode keys
+- [API](https://github.com/haruhimemoe/ordr#api): options, createRender, waitForRender, reading, renderMatchMap
+- [Errors](https://github.com/haruhimemoe/ordr#errors): OrdrError codes and o!rdr's numeric codes
+- [Etiquette](https://github.com/haruhimemoe/ordr#etiquette): User-Agent, dev mode, per-user limits

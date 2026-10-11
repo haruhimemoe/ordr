@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and feedback
+    url: https://haruhime.moe/discord
+    about: Ask on the haruhime.moe Discord server.
+  - name: Report a vulnerability
+    url: https://github.com/haruhimemoe/ordr/security/advisories/new
+    about: Report security problems privately, never in a public issue (see SECURITY.md).
+  - name: Problems with o!rdr itself
+    url: https://ordr.issou.best/docs/
+    about: This repository is the client only.
