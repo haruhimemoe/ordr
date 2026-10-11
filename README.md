@@ -55,7 +55,7 @@ Use a dev-mode key (`ORDR_DEV_KEYS.success`, `.fail` or `.wsFail`) as `apiKey`. 
 
 ### `createOrdrClient(options?)`
 
-| Option | Default | |
+| Option | Default | Notes |
 | --- | --- | --- |
 | `apiKey` | none | Sent as `verificationKey` on renders; needed for `getBotPreset` |
 | `baseUrl` | `ORDR_BASE_URL` (`https://apis.issou.best`) | |
